@@ -101,46 +101,32 @@ export const profile: GitHubProfile = {
 
 export interface SkillCategory {
   title: string;
-  emoji: string;
-  skills: { name: string; icon: string }[];
+  skills: string[];
 }
 
 export const skillCategories: SkillCategory[] = [
   {
     title: 'Languages',
-    emoji: '💻',
-    skills: [
-      { name: 'Python', icon: '🐍' },
-      { name: 'Java', icon: '☕' },
-      { name: 'MySQL', icon: '🐬' },
-      { name: 'PostgreSQL', icon: '🐘' },
-      { name: 'HTML/CSS', icon: '🎨' },
-    ],
+    skills: ['Python', 'Java', 'MySQL', 'PostgreSQL', 'HTML/CSS'],
   },
   {
     title: 'Backend & Frameworks',
-    emoji: '⚡',
-    skills: [
-      { name: 'FastAPI', icon: '⚡' },
-      { name: 'LangChain', icon: '🦜' },
-      { name: 'REST APIs', icon: '🔌' },
-      { name: 'Streamlit', icon: '🎈' },
-    ],
+    skills: ['FastAPI', 'LangChain', 'REST APIs', 'Streamlit'],
   },
   {
     title: 'Data, Cloud & DevOps',
-    emoji: '☁️',
     skills: [
-      { name: 'Redis', icon: '🔴' },
-      { name: 'Apache Kafka', icon: '📬' },
-      { name: 'Docker', icon: '🐳' },
-      { name: 'Docker Compose', icon: '📦' },
-      { name: 'GitHub Actions (CI/CD)', icon: '🚀' },
-      { name: 'Git', icon: '🐙' },
-      { name: 'AWS (EC2, S3)', icon: '☁️' },
+      'Redis',
+      'Apache Kafka',
+      'Docker',
+      'Docker Compose',
+      'GitHub Actions (CI/CD)',
+      'Git',
+      'AWS (EC2, S3)',
     ],
   },
 ];
+
 
 
 export interface ExperienceItem {

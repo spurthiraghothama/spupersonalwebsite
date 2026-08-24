@@ -381,26 +381,14 @@ img {
   text-align: center;
 }
 
-/* Eye embedded in name */
-.hero__eye-wrapper {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 -0.05em;
+/* Sparkle Accent */
+.hero__sparkle-accent {
+  display: inline-block;
+  color: var(--accent);
+  font-size: clamp(2rem, 5.5vw, 4.2rem);
+  margin-left: 0.18em;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
   vertical-align: middle;
-}
-
-.hero__eye {
-  width: clamp(3rem, 9vw, 6.8rem);
-  height: auto;
-  display: block;
-  cursor: pointer;
-  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
-  transition: filter 0.3s;
-}
-
-.hero__eye:hover {
-  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.2));
 }
 
 /* Tagline */
@@ -838,14 +826,17 @@ img {
   gap: 1rem;
 }
 
-.skills__category-icon {
-  font-size: 2rem;
+.skills__category-number {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 14px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: var(--bg-accent);
   border: 1px solid var(--border);
 }
@@ -874,7 +865,7 @@ img {
 .skills__fun-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   background: var(--bg-secondary);
   padding: 0.65rem 1.15rem;
   border-radius: 999px;
@@ -892,8 +883,13 @@ img {
   cursor: grabbing;
 }
 
-.skills__pill-icon {
-  font-size: 1.15rem;
+.skills__pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: inline-block;
+  opacity: 0.85;
 }
 
 .skills__pill-name {
@@ -905,6 +901,12 @@ img {
   font-size: 0.75rem;
   display: inline-block;
   margin-left: 0.1rem;
+}
+
+.skills__marquee-star {
+  color: var(--accent);
+  font-size: 0.8rem;
+  margin-right: 0.25rem;
 }
 
 /* Animated Marquee Strip */

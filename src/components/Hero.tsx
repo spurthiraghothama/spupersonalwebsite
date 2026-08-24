@@ -1,96 +1,22 @@
 import { motion } from 'framer-motion';
 import { profile } from '../data/github';
 
-function BlinkingEye() {
+function SparkleAccent() {
   return (
-    <motion.svg
-      viewBox="0 0 120 60"
-      className="hero__eye"
-      whileHover={{ scale: 1.08 }}
-      transition={{ type: 'spring', stiffness: 300 }}
+    <motion.span
+      className="hero__sparkle-accent"
+      animate={{
+        scale: [1, 1.25, 0.95, 1.15, 1],
+        rotate: [0, 90, 180, 270, 360],
+      }}
+      transition={{
+        repeat: Infinity,
+        duration: 8,
+        ease: 'linear',
+      }}
     >
-      <defs>
-        <clipPath id="eyeClip">
-          <path d="M10 30 Q60 -5 110 30 Q60 65 10 30Z" />
-        </clipPath>
-      </defs>
-
-      {/* Sclera / eye background */}
-      <path
-        d="M10 30 Q60 -5 110 30 Q60 65 10 30Z"
-        fill="var(--bg-secondary)"
-      />
-
-      {/* Outer eye outline */}
-      <path
-        d="M10 30 Q60 -5 110 30 Q60 65 10 30Z"
-        fill="none"
-        stroke="var(--eye-stroke)"
-        strokeWidth="3.5"
-        strokeLinecap="round"
-      />
-
-      {/* Inner eye elements that blink continuously */}
-      <motion.g
-        clipPath="url(#eyeClip)"
-        animate={{
-          scaleY: [1, 1, 0.08, 1, 1],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 3.2,
-          times: [0, 0.72, 0.78, 0.84, 1],
-          ease: 'easeInOut',
-        }}
-        style={{ transformOrigin: '60px 30px' }}
-      >
-        {/* Iris */}
-        <circle
-          cx="60"
-          cy="30"
-          r="16"
-          fill="var(--eye-iris)"
-        />
-        {/* Pupil */}
-        <circle
-          cx="60"
-          cy="30"
-          r="7.5"
-          fill="var(--eye-pupil)"
-        />
-        {/* Eye highlight shine */}
-        <circle
-          cx="53"
-          cy="24"
-          r="3.5"
-          fill="white"
-          opacity="0.85"
-        />
-      </motion.g>
-
-      {/* Animated Eyelid line that blinks seamlessly */}
-      <motion.path
-        fill="none"
-        stroke="var(--eye-stroke)"
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        animate={{
-          d: [
-            "M10 30 Q60 -5 110 30",
-            "M10 30 Q60 -5 110 30",
-            "M10 30 Q60 30 110 30",
-            "M10 30 Q60 -5 110 30",
-            "M10 30 Q60 -5 110 30",
-          ],
-        }}
-        transition={{
-          repeat: Infinity,
-          duration: 3.2,
-          times: [0, 0.72, 0.78, 0.84, 1],
-          ease: 'easeInOut',
-        }}
-      />
-    </motion.svg>
+      ✦
+    </motion.span>
   );
 }
 
@@ -110,7 +36,7 @@ export function Hero() {
 
       {/* Main hero content */}
       <div className="hero__content">
-        {/* Big name with eye */}
+        {/* Big clean name with animated sparkle accent */}
         <motion.div
           className="hero__name-block"
           initial={{ opacity: 0, y: 40 }}
@@ -120,11 +46,8 @@ export function Hero() {
           <span className="hero__greeting">hi, i'm Spurthi Raghothama</span>
           <div className="hero__name-row">
             <h1 className="hero__name">
-              Sp
-              <span className="hero__eye-wrapper">
-                <BlinkingEye />
-              </span>
-              rthi
+              Spurthi
+              <SparkleAccent />
             </h1>
           </div>
         </motion.div>
