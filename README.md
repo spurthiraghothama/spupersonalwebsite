@@ -1,99 +1,80 @@
-# Spurthi Portfolio ✨
+# Spurthi Raghothama — Personal Portfolio ✨
 
-A cute, kawaii-inspired personal portfolio for **Spurthi** — fresher SDE. Built with real data from [GitHub](https://github.com/spurthiraghothama).
+An editorial, interactive personal portfolio website for **Spurthi Raghothama** — Computer Science student at PES University & Software Engineer.
+
+🔗 **Live Website:** [https://spupersonalwebsite.vercel.app/](https://spupersonalwebsite.vercel.app/)
+
+---
 
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
-## Features
+---
 
-- 💗 Custom cursor with heart/star trail effect
-- ✨ Floating stars, bubbles & pastel gradient background
-- 🌸 Smooth scroll animations (fade-in, slide-up)
-- 📱 Fully responsive design
-- 🎀 Playful micro-interactions — bouncy buttons, hover effects
-- 🐙 Projects pulled from GitHub repos
+## ✨ Features
 
-## Sections
+- 🌙 / ☀️ **Light & Dark Mode Toggle**:
+  - **Dark Mode**: Warm, editorial aesthetic inspired by Lauren Waller (`#1a1818` background, `#ece7e1` typography, warm gold accents).
+  - **Light Mode**: Cute, pastel pink & lavender palette with playful micro-interactions.
+  - Persists preference in `localStorage`.
+- 👁️ **Continuous Blinking Eye Animation**: Custom SVG animation seamlessly embedded in the centerpiece typography (`Sp👁rthi`).
+- ⚡ **Interactive Draggable Skills**:
+  - Categorized into *Languages*, *Backend & Frameworks*, and *Data, Cloud & DevOps*.
+  - Physics-based draggable skill pills with spring bounce and sparkle hover effects.
+  - Animated continuous marquee ticker ribbon.
+- 💼 **Minimalist Experience Timeline**:
+  - Highlights internship roles at **Venture Vertex LLC** and **ISFCR, PESU**.
+- 🚀 **Featured Projects**: Curated repository highlights with GitHub links.
+- 🎨 **Theme-Aware Custom Cursor**: Reactive particle trails and dynamic cursor emojis (`💗` in light mode, `✨` in dark mode).
+- 📱 **Fully Responsive**: Smooth layout on mobile, tablet, and widescreen desktop displays.
 
-| Section  | Description                                      |
-| -------- | ------------------------------------------------ |
-| Hero     | Avatar, intro, stats, CTA buttons              |
-| About    | Bio, quick facts, mascot                         |
-| Skills   | Language bars + skill pills from GitHub data     |
-| Projects | Featured repos with links                        |
-| Contact  | GitHub connect + footer                          |
+---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **Vite 8** + **React 19** + **TypeScript**
-- **Framer Motion** for scroll & hover animations
-- **CSS** custom properties for kawaii pastel theme
+- **Framework**: [Vite](https://vitejs.dev/) + [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Styling**: Vanilla CSS custom properties & design tokens
+- **Typography**: Playfair Display (Serif) + Inter (Sans-serif)
+- **Deployment**: [Vercel](https://vercel.com/)
 
-## Run Locally
+---
+
+## 🚀 Run Locally
 
 ```bash
-# Clone or navigate to the project
-cd spurthi-portfolio
+# 1. Clone the repository
+git clone https://github.com/spurthiraghothama/spupersonalwebsite.git
+cd spupersonalwebsite
 
-# Install dependencies
+# 2. Install dependencies
 npm install
 
-# Start dev server
+# 3. Start development server
 npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-## Build for Production
+---
+
+## 📦 Build for Production
 
 ```bash
 npm run build
-npm run preview   # preview the production build locally
+npm run preview
 ```
 
-## Deploy to Vercel
+---
 
-### Option 1: Vercel CLI
+## 📬 Contact
 
-```bash
-npm i -g vercel
-vercel
-```
+- **Email**: [spurthi.raghothama23@gmail.com](mailto:spurthi.raghothama23@gmail.com)
+- **GitHub**: [@spurthiraghothama](https://github.com/spurthiraghothama)
+- **Website**: [https://spupersonalwebsite.vercel.app/](https://spupersonalwebsite.vercel.app/)
 
-Follow the prompts. Vercel auto-detects Vite.
+---
 
-### Option 2: GitHub Integration
-
-1. Push this repo to GitHub
-2. Go to [vercel.com/new](https://vercel.com/new)
-3. Import the repository
-4. Vercel will use the settings from `vercel.json`:
-   - **Build Command:** `npm run build`
-   - **Output Directory:** `dist`
-   - **Framework:** Vite
-5. Click **Deploy**
-
-No environment variables needed — GitHub data is bundled at build time in `src/data/github.ts`.
-
-## Project Structure
-
-```
-spurthi-portfolio/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/     # UI sections & effects
-│   ├── data/github.ts  # GitHub profile & repo data
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── index.css       # Global styles & theme
-├── vercel.json
-├── vite.config.ts
-└── package.json
-```
-
-## License
-
-MIT — feel free to fork and make it your own! 💕
+Made with care by **Spurthi Raghothama** · 2026
