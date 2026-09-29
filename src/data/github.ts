@@ -142,6 +142,11 @@ export const experiences: ExperienceItem[] = [
     period: 'May 2026 – Jul 2026',
   },
   {
+    company: 'Happiest Minds Technologies',
+    role: 'SDE Intern',
+    period: 'Sep 2026 – Present',
+  },
+  {
     company: 'ISFCR, PESU',
     role: 'Security Operations Center Intern',
     period: 'Oct 2024 – Jul 2025',

@@ -2,7 +2,7 @@
 
 An editorial, interactive personal portfolio website for **Spurthi Raghothama** — Computer Science student at PES University & Software Engineer.
 
-🔗 **Live Website:** [https://spupersonalwebsite.vercel.app/](https://spupersonalwebsite.vercel.app/)
+🔗 **Live Website:** [https://spurthi.vercel.app/](https://spupersonalwebsite.vercel.app/)
 
 ---
 
