@@ -107,7 +107,7 @@ export interface SkillCategory {
 export const skillCategories: SkillCategory[] = [
   {
     title: 'Languages',
-    skills: ['Python', 'Java', 'MySQL', 'PostgreSQL', 'HTML/CSS'],
+    skills: ['Python', 'Java', 'MySQL', 'HTML/CSS'],
   },
   {
     title: 'Backend & Frameworks',
@@ -116,13 +116,11 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'Data, Cloud & DevOps',
     skills: [
-      'Redis',
       'Apache Kafka',
       'Docker',
       'Docker Compose',
       'GitHub Actions (CI/CD)',
       'Git',
-      'AWS (EC2, S3)',
     ],
   },
 ];
@@ -137,14 +135,14 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
-    company: 'Venture Vertex LLC',
-    role: 'Software Engineer Intern',
-    period: 'May 2026 – Jul 2026',
-  },
-  {
     company: 'Happiest Minds Technologies',
     role: 'SDE Intern',
     period: 'Sep 2026 – Present',
+  },
+  {
+    company: 'Venture Vertex LLC',
+    role: 'Software Engineer Intern',
+    period: 'May 2026 – Jul 2026',
   },
   {
     company: 'ISFCR, PESU',
